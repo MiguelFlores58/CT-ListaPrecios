@@ -1,0 +1,99 @@
+﻿{
+  "Metadata": {
+    "Id": "10112bb9-aba2-4340-ba90-35f2c719ba94",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "Iniciales",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "Opciones",
+        "widget": "choicesjs",
+        "tableView": true,
+        "data": {
+          "values": [
+            {
+              "label": "Seleccione Opcion",
+              "value": "seleccioneOpcion"
+            },
+            {
+              "label": "Consultar",
+              "value": "consultar"
+            },
+            {
+              "label": "Actualizar",
+              "value": "actualizar"
+            }
+          ]
+        },
+        "key": "select",
+        "type": "select",
+        "input": true
+      },
+      {
+        "label": "Insumo",
+        "tableView": true,
+        "key": "insumo",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Tipo de Precio",
+        "widget": "choicesjs",
+        "tableView": true,
+        "data": {
+          "values": [
+            {
+              "label": "Seleccione",
+              "value": "seleccione"
+            },
+            {
+              "label": "Torreon TSE",
+              "value": "trc_tse"
+            },
+            {
+              "label": "Torreon Utilidad DIGTH",
+              "value": "trc_digth"
+            },
+            {
+              "label": "Qro TSE",
+              "value": "qro_tse"
+            },
+            {
+              "label": "Qro Utilidad DIGTH",
+              "value": "qro_digth"
+            },
+            {
+              "label": "Convenio",
+              "value": "convenio"
+            }
+          ]
+        },
+        "key": "tipoDePrecio",
+        "type": "select",
+        "input": true
+      },
+      {
+        "label": "Si va a actualizar, ingrese el precio",
+        "tableView": true,
+        "key": "siVaAActualizarIngreseElPrecio",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}
