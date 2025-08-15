@@ -96,7 +96,7 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Consulta" sap:VirtualizedContainerService.HintSize="1272,1630" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Consulta" sap:VirtualizedContainerService.HintSize="1201,1630" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strPrecio" />
     </Sequence.Variables>

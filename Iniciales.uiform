@@ -13,7 +13,7 @@
   "Data": {
     "components": [
       {
-        "label": "Opciones",
+        "label": "Opciones (Importar layout colocar archivo en 'c:\\robot\\lista.csv')",
         "widget": "choicesjs",
         "tableView": true,
         "data": {
@@ -23,12 +23,20 @@
               "value": "seleccioneOpcion"
             },
             {
-              "label": "Consultar",
+              "label": "Consultar un insumo",
               "value": "consultar"
             },
             {
-              "label": "Actualizar",
+              "label": "Actualizar un Insumo",
               "value": "actualizar"
+            },
+            {
+              "label": "Importar Layout",
+              "value": "importar"
+            },
+            {
+              "label": "Enviar Lista Completa",
+              "value": "enviar"
             }
           ]
         },
@@ -37,14 +45,21 @@
         "input": true
       },
       {
-        "label": "Insumo",
+        "label": "Email para envío de lista completa",
+        "tableView": true,
+        "key": "emailParaEnvioDeListaCompleta",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Insumo a consultar precio actual",
         "tableView": true,
         "key": "insumo",
         "type": "textfield",
         "input": true
       },
       {
-        "label": "Tipo de Precio",
+        "label": "Actualización individual, seleccione el precio",
         "widget": "choicesjs",
         "tableView": true,
         "data": {
@@ -80,7 +95,7 @@
         "input": true
       },
       {
-        "label": "Si va a actualizar, ingrese el precio",
+        "label": "Actualización individual, ingrese el precio del tipo seleccionado",
         "tableView": true,
         "key": "siVaAActualizarIngreseElPrecio",
         "type": "textfield",
