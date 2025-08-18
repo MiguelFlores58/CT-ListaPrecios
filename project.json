@@ -4,8 +4,10 @@
   "description": "Robot para actualizar y consultar las listas de precios de los articulos",
   "main": "Principal.xaml",
   "dependencies": {
+    "UiPath.Excel.Activities": "[3.2.1]",
     "UiPath.Form.Activities": "[25.4.3]",
     "UiPath.GSuite.Activities": "[3.2.10]",
+    "UiPath.Mail.Activities": "[2.3.10]",
     "UiPath.System.Activities": "[25.6.1]"
   },
   "webServices": [],

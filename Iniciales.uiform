@@ -45,13 +45,6 @@
         "input": true
       },
       {
-        "label": "Email para envío de lista completa",
-        "tableView": true,
-        "key": "emailParaEnvioDeListaCompleta",
-        "type": "textfield",
-        "input": true
-      },
-      {
         "label": "Insumo a consultar precio actual",
         "tableView": true,
         "key": "insumo",

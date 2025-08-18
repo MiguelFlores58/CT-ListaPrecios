@@ -111,13 +111,13 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Actualiza" sap:VirtualizedContainerService.HintSize="1272,4432" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Actualiza" sap:VirtualizedContainerService.HintSize="1290,2638" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Principal del Registro" sap:VirtualizedContainerService.HintSize="678,4409" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Principal del Registro" sap:VirtualizedContainerService.HintSize="624,2615" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="vIdxListaPrecios" />
         <Variable x:TypeArguments="sd:DataTable" Name="dtGoogleSheet" />
@@ -127,7 +127,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Assign sap:VirtualizedContainerService.HintSize="644,115" sap2010:WorkflowViewState.IdRef="Assign_6">
+      <Assign sap:VirtualizedContainerService.HintSize="590,115" sap2010:WorkflowViewState.IdRef="Assign_6">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[vIdxListaPrecios]</OutArgument>
         </Assign.To>
@@ -135,34 +135,34 @@
           <InArgument x:TypeArguments="x:String">1df0msPEPuZ8NpTYtSP0Yxgw9E8Q5bZOmvgL9hcSRYs4</InArgument>
         </Assign.Value>
       </Assign>
-      <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="robotcasast@gmail.com" Action="UseExisting" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="644,4102" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_1" Mode="EnterId" SpreadsheetId="[vIdxListaPrecios]" UseConnectionService="False" UserEmail="robotcasast@gmail.com">
+      <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="robotcasast@gmail.com" Action="UseExisting" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="590,2417" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_1" Mode="EnterId" SpreadsheetId="[vIdxListaPrecios]" UseConnectionService="False" UserEmail="robotcasast@gmail.com">
         <ugas:GoogleSheetsApplicationScope.Body>
           <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="Spreadsheet" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="610,3782" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556,2106" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="576,252" sap2010:WorkflowViewState.IdRef="ReadRange_1" IncludeHeaders="True" Result="[dtGoogleSheet]" SheetName="Lista" />
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtGoogleSheet]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="576,3226" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="522,252" sap2010:WorkflowViewState.IdRef="ReadRange_1" IncludeHeaders="True" Result="[dtGoogleSheet]" SheetName="Lista" />
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtGoogleSheet]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="522,1550" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="574,3044" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,1368" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <If Condition="[CurrentRow(&quot;Insumo&quot;).ToString = strInsumo]" DisplayName="Si encuentro la clave del insumo" sap:VirtualizedContainerService.HintSize="540,2984" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If Condition="[CurrentRow(&quot;Insumo&quot;).ToString = strInsumo]" DisplayName="Si encuentro la clave del insumo" sap:VirtualizedContainerService.HintSize="486,1308" sap2010:WorkflowViewState.IdRef="If_1">
                         <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="538,2829" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,1153" sap2010:WorkflowViewState.IdRef="Sequence_7">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="scg:List(x:Object)" Name="vListaDatos" />
                               <Variable x:TypeArguments="sd:DataTable" Name="dtHistorial" />
@@ -173,10 +173,26 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Sequence DisplayName="Comparaciones del tipo de precio" sap:VirtualizedContainerService.HintSize="504,1733" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                            <Assign sap:VirtualizedContainerService.HintSize="450,115" sap2010:WorkflowViewState.IdRef="Assign_13">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="scg:List(x:Object)">[vListaDatos]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="scg:List(x:Object)">[New List(Of Object)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="450,115" sap2010:WorkflowViewState.IdRef="Assign_14">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="scg:List(x:Object)">[vListaDatos]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="scg:List(x:Object)">[New List(Of Object)(CurrentRow.ItemArray)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Sequence DisplayName="Comparaciones del tipo de precio" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_13">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
@@ -327,8 +343,8 @@
                                 </If.Else>
                               </If>
                             </Sequence>
-                            <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="504,247" sap2010:WorkflowViewState.IdRef="ReadRange_2" IncludeHeaders="True" Result="[dtHistorial]" SheetName="Historial" />
-                            <Assign sap:VirtualizedContainerService.HintSize="504,115" sap2010:WorkflowViewState.IdRef="Assign_12">
+                            <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="450,247" sap2010:WorkflowViewState.IdRef="ReadRange_2" IncludeHeaders="True" Result="[dtHistorial]" SheetName="Historial" />
+                            <Assign sap:VirtualizedContainerService.HintSize="450,115" sap2010:WorkflowViewState.IdRef="Assign_12">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[intPrimeraVacia]</OutArgument>
                               </Assign.To>
@@ -336,35 +352,19 @@
                                 <InArgument x:TypeArguments="x:Int32">[dtHistorial.Rows.Count + 2]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="504,115" sap2010:WorkflowViewState.IdRef="Assign_13">
-                              <Assign.To>
-                                <OutArgument x:TypeArguments="scg:List(x:Object)">[vListaDatos]</OutArgument>
-                              </Assign.To>
-                              <Assign.Value>
-                                <InArgument x:TypeArguments="scg:List(x:Object)">[New List(Of Object)]</InArgument>
-                              </Assign.Value>
-                            </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="504,115" sap2010:WorkflowViewState.IdRef="Assign_14">
-                              <Assign.To>
-                                <OutArgument x:TypeArguments="scg:List(x:Object)">[vListaDatos]</OutArgument>
-                              </Assign.To>
-                              <Assign.Value>
-                                <InArgument x:TypeArguments="scg:List(x:Object)">[New List(Of Object)(CurrentRow.ItemArray)]</InArgument>
-                              </Assign.Value>
-                            </Assign>
-                            <uasc:AppendItemToCollection x:TypeArguments="x:Object" Collection="[vListaDatos]" DisplayName="Append Items to Collection" sap:VirtualizedContainerService.HintSize="504,175" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_1">
+                            <uasc:AppendItemToCollection x:TypeArguments="x:Object" Collection="[vListaDatos]" DisplayName="Append Items to Collection" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_1">
                               <uasc:AppendItemToCollection.Items>
                                 <scg:List x:TypeArguments="InArgument(x:Object)" Capacity="4">
                                   <InArgument x:TypeArguments="x:Object">[Now.ToString("dd/MM/yyyy")]</InArgument>
                                 </scg:List>
                               </uasc:AppendItemToCollection.Items>
                             </uasc:AppendItemToCollection>
-                            <uga:AppendRow ContinueOnError="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" CellReference="[&quot;A&quot; + intPrimeraVacia.ToString()]" DisplayName="Append Row" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="504,221" sap2010:WorkflowViewState.IdRef="AppendRow_2" Row="[vListaDatos.ToArray()]" SheetName="Historial" />
-                            <ui:Break sap:VirtualizedContainerService.HintSize="504,48" sap2010:WorkflowViewState.IdRef="Break_1" />
+                            <uga:AppendRow ContinueOnError="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" CellReference="[&quot;A&quot; + intPrimeraVacia.ToString()]" DisplayName="Append Row" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="450,221" sap2010:WorkflowViewState.IdRef="AppendRow_2" Row="[vListaDatos.ToArray()]" SheetName="Historial" />
+                            <ui:Break sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Break_1" />
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="538,25" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="484,25" sap2010:WorkflowViewState.IdRef="Sequence_8">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -378,7 +378,7 @@
                   </ActivityAction>
                 </ui:ForEachRow.Body>
               </ui:ForEachRow>
-              <uga:WriteRange ContinueOnError="{x:Null}" Request="{x:Null}" Result="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DataTable="[dtGoogleSheet]" DisplayName="Write Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="576,244" sap2010:WorkflowViewState.IdRef="WriteRange_1" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="Lista" StartingCell="A1" />
+              <uga:WriteRange ContinueOnError="{x:Null}" Request="{x:Null}" Result="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DataTable="[dtGoogleSheet]" DisplayName="Write Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="522,244" sap2010:WorkflowViewState.IdRef="WriteRange_1" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="Lista" StartingCell="A1" />
             </Sequence>
           </ActivityAction>
         </ugas:GoogleSheetsApplicationScope.Body>
@@ -392,8 +392,13 @@
             <Literal x:TypeArguments="x:String" Value="" />
           </InArgument>
         </ugas:GoogleSheetsApplicationScope.CredentialSecret>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
       </ugas:GoogleSheetsApplicationScope>
-      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="644,109" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Actualización terminada&quot;]" />
     </Sequence>
   </Sequence>
 </Activity>
